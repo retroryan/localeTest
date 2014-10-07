@@ -11,7 +11,7 @@ object Application extends BaseController {
       implicit request =>
           println("Languages: " + request.acceptLanguages.map(_.code).mkString(", "))
 
-          decorate(views.html.index("Hello"),
+          decorate(lang => views.html.index("Hello"),
               "Online Check-In - Norwegian Cruise Line",
               views.html.layout.apply)
   }
