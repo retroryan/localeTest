@@ -1,7 +1,7 @@
-@(message: String)
+@(message: String)(implicit lang: Lang)
 
-@main("Welcome to Play") {
+@main {
 
-    @play20.welcome(message)
+    @Messages("checkinTimeEdit.description")
 
 }
