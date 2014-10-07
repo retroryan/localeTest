@@ -16,4 +16,12 @@ object Application extends BaseController {
               views.html.layout.apply)
   }
 
+    def second = Action {
+
+        implicit request =>
+            println("Languages: " + request.acceptLanguages.map(_.code).mkString(", "))
+
+            Redirect(controllers.routes.Application.index())
+    }
+
 }
