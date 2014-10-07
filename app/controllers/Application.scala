@@ -14,8 +14,6 @@ object Application extends BaseController {
           decorate(views.html.index("Hello"),
               "Online Check-In - Norwegian Cruise Line",
               views.html.layout.apply)
-
-           Ok(views.html.index("Your new application is ready."))
   }
 
 }
