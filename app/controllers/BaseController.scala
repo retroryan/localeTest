@@ -4,6 +4,7 @@ import play.twirl.api.Html
 import play.api.mvc.Results.Status
 import play.api.mvc.{Controller, Result, RequestHeader}
 import play.api.i18n.Lang
+import play.api.Play.current
 
 
 trait BaseController extends Controller {

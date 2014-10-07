@@ -8,7 +8,7 @@ object Application extends BaseController {
 
   def index = Action {
 
-      request =>
+      implicit request =>
           println("Languages: " + request.acceptLanguages.map(_.code).mkString(", "))
 
           decorate(views.html.index("Hello"),
